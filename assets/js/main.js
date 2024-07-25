@@ -31,3 +31,23 @@ gsap.from('.nav__item', {opacity: 0, duration: 3, delay: 3.2, y: 25, ease:'expo.
 
 // SOCIAL
 gsap.from('.home__social-icon', {opacity: 0, duration: 3, delay: 4, y: 25, ease:'expo.out', stagger: .2})
+
+
+// Get the anchor tags
+const downloadCvBtn = document.getElementById('download-cv');
+
+
+// Add event listeners to the anchor tags
+downloadCvBtn.addEventListener('click', downloadCv);
+
+// Function to download the CV
+function downloadCv() {
+  // Specify the path to your CV PDF file
+  const cvPath = './assets/cv/Chandrabhan Maurya.pdf';
+
+  // Create a new link element
+  const link = document.createElement('a');
+  link.href = cvPath;
+  link.download = 'Chandrabhan Maurya.pdf'; // Specify the file name for the downloaded file
+  link.click();
+}
