@@ -43,11 +43,11 @@ downloadCvBtn.addEventListener('click', downloadCv);
 // Function to download the CV
 function downloadCv() {
   // Specify the path to your CV PDF file
-  const cvPath = './assets/cv/Chandrabhan Maurya.pdf';
+  const cvPath = './assets/cv/Shaktiman Kushwaha CV_1.pdf';
 
   // Create a new link element
   const link = document.createElement('a');
   link.href = cvPath;
-  link.download = 'Chandrabhan Maurya.pdf'; // Specify the file name for the downloaded file
+  link.download = 'Shaktiman Kushwaha.pdf'; // Specify the file name for the downloaded file
   link.click();
 }
